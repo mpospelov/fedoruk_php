@@ -24,7 +24,7 @@
 	function getColor($image , $value , $maxValue){
 		$middle = $maxValue / 2;
 		if($middle > $value)
-			return imagecolorallocate($image, 0 ,255 * ($value)/$middle , 255 * ($middle - $value)/$middle);
+		return imagecolorallocate($image, 0 ,255 * ($value)/$middle , 255 * ($middle - $value)/$middle);
 		return imagecolorallocate($image, 255 * ($value - $middle) / $middle ,255 * ($maxValue - $value)/$middle , 0);
 	}
 ?>
